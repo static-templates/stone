@@ -35,6 +35,8 @@ jobs:
         uses: actions/configure-pages@v3
       - name: GitHub Action for npx
         uses: mikeal/npx@1.0.0
+      - name: Run NPM Install
+        run: npm install
       - name: Run the static build step
         run: npx @devdojo/static build
       - name: Upload artifact
