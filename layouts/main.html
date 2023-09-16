@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" x-cloak x-data :class="{ 'dark': $store.theme.isDark }">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content="{description}">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+    <style>[x-cloak]{ display:none; }</style>
+    {tailwindcss}
+</head>
+<body class="antialiased transition bg-primary-50 text-primary-950 dark:bg-primary-950 dark:text-primary-200">
+    <include src="header.html"></include>
+    {slot}
+    <include src="footer.html"></include>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+[
+    {
+        "id": "expertise-1",
+        "name": "Digital Experience Platforms",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+    },
+    {
+        "id": "expertise-2",
+        "name": "Web & Mobile Development",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+    },
+    {
+        "id": "expertise-3",
+        "name": "Serverless Computing Platforms",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+    },
+    {
+        "id": "expertise-4",
+        "name": "Build & Test Automation Tools",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+    },
+    {
+        "id": "expertise-5",
+        "name": "Artificial Intelligence",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+    },
+    {
+        "id": "expertise-6",
+        "name": "Full project support",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+    }
+]

@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Privacy",
+        "href": "/privacy",
+        "isExternal": false
+    },
+    {
+        "name": "404",
+        "href": "/404",
+        "isExternal": false
+    },
+    {
+        "name": "Styleguide",
+        "href": "/styleguide",
+        "isExternal": false
+    }
+]

@@ -1,0 +1,64 @@
+<footer x-data class="py-16 mt-16 bg-primary-500/10 dark:bg-primary-400/10 lg:mt-20 lg:py-20" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="sr-only">Footer</h2>
+    <div class="max-w-2xl px-4 mx-auto sm:px-6 lg:max-w-7xl lg:px-8">
+        <div class="flex flex-col justify-between gap-12 sm:gap-16 lg:flex-row">
+            <div class="flex flex-col items-start max-w-sm gap-6 sm:gap-8">
+                <img class="w-auto h-8" width="65" height="40" :src="$store.theme.isDark ? '/assets/images/logo-inverted.svg' : '/assets/images/logo.svg'" alt="Stone" />
+                <p class="text-base text-primary-950/70 dark:text-primary-200/70">
+                    Stone is a premium Astro theme specially designed for Business, Marketing, SaaS and
+                    Startup websites.
+                </p>
+                <p class="text-sm text-primary-950/70 dark:text-primary-200/70">© 2023 Stone</p>
+            </div>
+
+            <!-- Bottom links -->
+            <div class="grid flex-1 max-w-xl grid-cols-1 gap-8 sm:grid-cols-3">
+
+                <!-- Social -->
+                <div class="flex flex-col gap-4">
+                    <p class="text-base font-medium">Social</p>
+                    <ul role="list" class="flex flex-col gap-3">
+                        <ForEach collection="footersociallinks">
+                            <li>
+                                <a href={footersociallinks.href} class="inline-flex items-center gap-1 text-base rounded-md focus-visible:outline-primary-950 dark:focus-visible:outline-primary-200 hover:underline focus-visible:outline focus-visible:outline-2" target="_blank">
+                                    {footersociallinks.name}
+                                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z" /></svg>
+                                </a>
+                            </li>
+                        </ForEach>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="flex flex-col gap-4">
+                  <p class="text-base font-medium">Company</p>
+                  <ul role="list" class="flex flex-col gap-3">
+                      <ForEach collection="footercompanylinks">
+                          <li>
+                              <a href={footercompanylinks.href} class="inline-flex items-center gap-1 text-base rounded-md focus-visible:outline-primary-950 dark:focus-visible:outline-primary-200 hover:underline focus-visible:outline focus-visible:outline-2" target="_blank">
+                                  {footercompanylinks.name}
+                              </a>
+                          </li>
+                      </ForEach>
+                  </ul>
+              </div>
+
+              <!-- Legal -->
+              <div class="flex flex-col gap-4">
+                <p class="text-base font-medium">Legal</p>
+                <ul role="list" class="flex flex-col gap-3">
+                    <ForEach collection="footerlegallinks">
+                        <li>
+                            <a href={footerlegallinks.href} class="inline-flex items-center gap-1 text-base rounded-md focus-visible:outline-primary-950 dark:focus-visible:outline-primary-200 hover:underline focus-visible:outline focus-visible:outline-2" target="_blank">
+                                {footerlegallinks.name}
+                            </a>
+                        </li>
+                    </ForEach>
+                </ul>
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+</footer>

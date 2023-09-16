@@ -1,0 +1,22 @@
+<section class="py-16 sm:py-20">
+  <div class="max-w-2xl px-4 mx-auto sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="flex flex-col gap-8 lg:gap-12">
+      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Our Values</h2>
+      <div class="grid gap-8 lg:grid-cols-2">
+          <ForEach collection="values">
+            <div class="mt-16 space-y-8">
+                  <div class="flex flex-col gap-12 px-6 py-8 bg-primary-500/10 dark:bg-primary-400/10 rounded-3xl">
+                    <p class="text-sm">{values.ref}</p>
+                    <div class="flex flex-col gap-4">
+                      <h3 class="text-xl font-medium">{values.name}</h3>
+                      <p class="text-base text-primary-950/70 dark:text-primary-200/70 sm:text-lg">
+                        {values.description}
+                      </p>
+                    </div>
+                  </div>
+              </div>
+            </ForEach>
+      </div>
+    </div>
+  </div>
+</section>

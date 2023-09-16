@@ -1,0 +1,34 @@
+<section class="py-16 sm:py-20">
+  <div class="px-4 mx-auto v sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="flex flex-col items-center gap-12 lg:gap-20">
+      <h2 class="max-w-xl mx-auto text-3xl font-medium tracking-tight text-center sm:text-4xl">
+        Trusted by the largest companies in the world
+      </h2>
+      <div
+        class="grid divide-y divide-primary-900/10 dark:divide-primary-300/10 lg:grid-cols-3 lg:divide-x lg:divide-y-0"
+      >
+        <ForEach collection="testimonials">
+            <figure class="flex flex-col items-center max-w-lg gap-6 py-8 mx-auto lg:px-8 lg:py-0">
+              <div class="flex flex-row gap-2">
+                  <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z" /></svg>
+                  <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z" /></svg>
+                  <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z" /></svg>
+              </div>
+              <blockquote class="text-lg italic leading-loose text-center text-primary-950/70 dark:text-primary-200/70">
+                <p>{testimonials.message}</p>
+              </blockquote>
+              <figcaption class="flex flex-col gap-4">
+                <img class="w-8 h-8 mx-auto rounded-full" src={testimonials.image} alt="" />
+                <div class="text-center">
+                  <div class="text-base font-medium">{testimonials.name}</div>
+                  <div class="text-sm text-primary-950/70 dark:text-primary-200/70">
+                    {testimonials.description}
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </ForEach>
+      </div>
+    </div>
+  </div>
+</section>

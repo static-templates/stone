@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Rebecca Hayes",
+        "description": "Designer",
+        "image": "/assets/images/testimonial-1.webp",
+        "message": "“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”"
+    },
+    {
+        "name": "Rosa Spencer",
+        "description": "Team Leader",
+        "image": "/assets/images/testimonial-2.webp",
+        "message": "“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”"
+    },
+    {
+        "name": "Christina Upton",
+        "description": "Manager",
+        "image": "/assets/images/testimonial-3.webp",
+        "message": "“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”"
+    }
+]

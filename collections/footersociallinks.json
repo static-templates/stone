@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Github",
+        "href": "https://github.com/",
+        "isExternal": true
+    },
+    {
+        "name": "Twitter",
+        "href": "https://twitter.com/",
+        "isExternal": true
+    },
+    {
+        "name": "Instagram",
+        "href": "https://instagram.com/",
+        "isExternal": true
+    },
+    {
+        "name": "Facebook",
+        "href": "https://facebook.com/",
+        "isExternal": true
+    }
+]

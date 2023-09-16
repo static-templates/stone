@@ -1,0 +1,41 @@
+<section class="py-16 sm:py-20">
+  <div class="max-w-2xl px-4 mx-auto sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="grid gap-12 lg:grid-cols-3 lg:gap-8">
+      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Expertise</h2>
+      <div class="lg:col-span-2">
+        <dl class="-mt-3" x-data="{ selected: null, toggle(value) { this.selected = this.selected === value ? null : value } }">
+          <ForEach collection="features">
+              <div class="px-4 transition rounded-3xl" 
+                x-data="{ 
+                  id: $id('features'), 
+                  get isOpen() { 
+                    return this.id === this.selected 
+                  }, 
+                  get isNextOpen() { 
+                    return (this.id + 1) === this.selected
+                  } 
+                  }" 
+                  x-bind:class="{ 'bg-primary-500/10 dark:bg-primary-400/10': isOpen }"
+                >
+                <dt class="text-lg transition border-b" x-cloak x-bind:class="{ 'border-transparent': isOpen || isNextOpen, 'border-primary-900/10 dark:border-primary-300/10': !(isOpen || isNextOpen) }">
+                  <button type="button" class="block w-full py-6 text-left transition group focus-visible:outline-none" aria-controls={features.id} x-on:click="toggle(id)" aria-expanded="false" x-bind:aria-expanded="isOpen.toString()">
+                    <div class="flex items-center justify-between group-focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2">
+                      <span class="font-medium">{features.name}</span>
+                      <span class="flex items-center ml-6 h-7">
+                        <svg class="w-6 h-6 transition duration-200 ease-in-out transform rotate-0 text-primary-600 dark:text-primary-400" x-bind:class="{ '-rotate-180': isOpen, 'rotate-0': !isOpen }" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.9997 13.1714L16.9495 8.22168L18.3637 9.63589L11.9997 15.9999L5.63574 9.63589L7.04996 8.22168L11.9997 13.1714Z" /></svg>
+                      </span>
+                    </div>
+                  </button>
+                </dt>
+                <dd class="pb-6 pr-6" :id="$id('features')" x-show="isOpen" x-cloak x-collapse>
+                  <p class="text-base text-primary-950/70 dark:text-primary-200/70">
+                    {features.description}
+                  </p>
+                </dd>
+              </div>
+            </ForEach>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>

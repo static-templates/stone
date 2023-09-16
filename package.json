@@ -1,0 +1,15 @@
+{
+  "name": "stone",
+  "version": "1.0.0",
+  "description": "Stone template for Static",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@alpinejs/collapse": "^3.13.0",
+    "alpinejs": "^3.13.0"
+  }
+}
