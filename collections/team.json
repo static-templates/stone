@@ -1,0 +1,17 @@
+[
+    {
+      "name": "Floyd Lowe",
+      "image": "/assets/images/team-1.webp",
+      "job": "Senior Designer"
+    },
+    {
+      "name": "Emma Dorsey",
+      "image": "/assets/images/team-2.webp",
+      "job": "Principal Designer"
+    },
+    {
+      "name": "Emily Mitchell",
+      "image": "/assets/images/team-3.webp",
+      "job": "Senior Developer"
+    }
+]

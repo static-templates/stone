@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require('tailwindcss/colors');
 
+console.log(colors.stone);
+
 module.exports = {
   darkMode: 'class',
   content: ["./**/*.{html,js}"],
@@ -9,7 +11,19 @@ module.exports = {
       current: 'currentColor',
       transparent: 'transparent',
       white: '#ffffff',
-      primary: colors.stone,
+      primary: {
+        '50': '#fafaf9',
+        '100': '#f5f5f4',
+        '200': '#e7e5e4',
+        '300': '#d6d3d1',
+        '400': '#a8a29e',
+        '500': '#78716c',
+        '600': '#57534e',
+        '700': '#44403c',
+        '800': '#292524',
+        '900': '#1c1917',
+        '950': '#0c0a09'
+      },
     },
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
