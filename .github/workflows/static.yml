@@ -36,7 +36,7 @@ jobs:
       - name: GitHub Action for npx
         uses: mikeal/npx@1.0.0
       - name: Run the static build step
-        run: npx @devdojo/static build https://static-templates.github.io/stone/
+        run: npx @devdojo/static build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
