@@ -1,5 +1,5 @@
 <header x-data="{ open: false }" class="transition" :class="{ 'bg-primary-500/10 dark:bg-primary-400/10': open, 'bg-primary-50 dark:bg-primary-950': !open }">
-    <div class="flex items-center justify-between max-w-2xl px-4 py-4 mx-auto sm:px-6 sm:py-6 lg:max-w-7xl lg:px-8">
+    <div class="flex items-center justify-between max-w-2xl px-6 py-4 mx-auto sm:py-6 lg:max-w-7xl lg:px-8">
         <!-- Brand logo -->
         <div class="flex">
             <a href="/" class="rounded-md focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 focus-visible:outline focus-visible:outline-2">
@@ -32,7 +32,7 @@
     </div>
 
     <!-- Menu content -->
-    <div class="max-w-2xl px-4 mx-auto sm:px-6 lg:max-w-7xl lg:px-8" id="website-menu" x-cloak x-show="open" x-collapse x-collapse.duration.500ms>
+    <div class="max-w-2xl px-6 mx-auto lg:max-w-7xl lg:px-8" id="website-menu" x-cloak x-show="open" x-collapse x-collapse.duration.500ms>
         <div class="grid grid-cols-1 gap-16 pt-6 pb-24 lg:grid-cols-2 lg:pt-12">
             <div class="items-center justify-center hidden px-6 py-8 bg-primary-500/10 dark:bg-primary-400/10 rounded-3xl lg:flex">
                 <p class="max-w-sm text-xl italic leading-loose text-primary-950/70 dark:text-primary-200/70">
