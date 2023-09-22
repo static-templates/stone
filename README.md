@@ -12,4 +12,4 @@ static new folder-name --template=stone
 
 ## Credits
 
-This templates was converted from the [Stone Astro Theme](https://github.com/m6v3l9/astro-theme-stone)
+This template was converted from the [Stone Astro Theme](https://github.com/m6v3l9/astro-theme-stone)
