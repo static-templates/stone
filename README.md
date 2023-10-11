@@ -7,7 +7,7 @@ This is a business, marketing, or SaaS template created for [Static](https://sta
 You can install this theme with the [static](https://www.npmjs.com/package/@devdojo/static) new command like so:
 
 ```
-static new folder-name --template=stone
+static new folder-name --stone
 ```
 
 ## Credits
